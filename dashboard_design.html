@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard_design.css">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p>Logo</p>  </div>
+
+           <div> <p id="menu" onclick="myFunction()"><i class="fa-solid fa-bars"></i> Menu</p></div>
+      
+    </header>
+
+    <div class="siderbar">
+    <nav id="nav">
+        <div class="main_nav_div">
+            <div class="sub_nav_div first_img">
+                <img class="avatar2" src="images/avatar2.png" alt="img">
+            </div>
+
+            <div  class=" first_img">
+               <p>Welcome, <b>Mike</b></p>
+               <i class="fas fa-envelope icon"></i>
+               <i class="fas fa-user icon"></i>
+               <i class="fas fa-cog icon"></i>
+            </div>
+
+        </div>
+        <hr>
+
+        <div class="dash1">
+            <h5 class="icon dash">Dashboard</h5>
+        </div>
+        <div>
+            <p id="close" onclick="myFunction()"><i class="fa-solid fa-xmark icon"></i> Close Menu</p>
+            <p class="active all_p padding"><i class="fas fa-users icon "></i> Overview</p>
+            <p class="all_p padding"><i class="far fa-eye icon"></i> Views</p>
+            <p class="all_p padding"><i class="fas fa-users icon"></i> Traffic</p>
+            <p class="all_p padding"><i class="fas fa-bullseye icon"></i> Geo</p>
+            <p class="all_p padding"><i class="far fa-gem icon"></i> Orders</p>
+            <p class="all_p padding"><i class="fas fa-bell icon"></i> News</p>
+            <p class="all_p padding"><i class="fas fa-university icon"></i> General</p>
+            <p class="all_p padding"><i class="fas fa-history icon"></i> Histry</p>
+            <p class="all_p padding"><i class="far fa-gem icon"></i> Settings</p>
+        </div>
+    </nav>
+    </div>
+
+    <script>
+        var n = 0;
+        function myFunction(){
+            if(n == 0){
+                n = 1;
+                document.getElementById("nav").style.display = "block";
+
+            }
+            else{
+                n = 0;
+                document.getElementById("nav").style.display = "none";
+            }
+        }
+
+    </script>
+
+    <section>
+        <div class="sub_nav_div width1">
+            <div class="width my">
+        <h3><b class="mydash"><i class="fas fa-tachometer-alt icon dash"></i>My Dashboard</b></h3>
+            </div>
+
+            <div class="diff_color">
+            <div class="black red">
+                <div><i class="fas fa-comment icon1"></i>
+                <h4 class="right">52</h4></div>
+                <h4 class="h4">Message</h4>
+            </div>
+
+            <div class="black blue">
+                <div><i class="far fa-eye icon1"></i>
+                <h4 class="right">99</h4></div>
+                <h4 class="h4">Views</h4>
+            </div>
+
+            <div class="black green">
+                <div><i class="fas fa-share-alt icon1"></i>
+                <h4 class="right">23</h4></div>
+                <h4 class="h4">Shares</h4>
+            </div>
+
+            <div class="black yellow">
+                <div><i class="fas fa-users icon1"></i>
+                <h4 class="right">50</h4></div>
+                <h4 class="h4">Users</h4>
+            </div>
+            </div>
+
+            <div class="left side">
+                <h3 class="h3">Regions</h3>
+                <img src="images/region.jpg" alt="img" width="100%" height="30%">
+            </div>
+
+            <div class="left ">
+                <h3 class="h33">Feeds</h3>
+                <table class="table1">
+                    <tr class="new">
+                        <td><i class="fas fa-user icon b1"></i></td>
+                        <td>New record, over 90 views.</td>
+                        <td><i>10 mins</i></td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fas fa-bell icon r1"></i></td>
+                        <td>Database error.</td>
+                        <td><i>15 mins</i></td>
+                    </tr>
+
+                    <tr class="new">
+                        <td><i class="fas fa-users icon y1"></i></td>
+                        <td>New record, over 40 users.</td>
+                        <td><i>17 mins</i></td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fas fa-comment icon r1"></i></td>
+                        <td>New comments.</td>
+                        <td><i>25 mins</i></td>
+                    </tr>
+
+                    <tr class="new">
+                        <td><i class="fas fa-bookmark icon b1"></i></td>
+                        <td>Check transactions.</td>
+                        <td><i>28 mins</i></td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fas fa-laptop icon r1" ></i></td>
+                        <td>CPU overload.</td>
+                        <td><i>35 mins</i></td>
+                    </tr>
+
+                    <tr class="new">
+                        <td><i class="fas fa-share-alt icon g1"></i></td>
+                        <td>New shares.</td>
+                        <td><i>39 mins</i></td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+
+            <div class="gen">
+                <h3 class="stat con">General Stats</h3>
+
+                <p class="visi">New Visitors</p>
+                <div class="gray">
+                    <div class="green1">+25%</div>
+                </div>
+
+                <p class="visi">New Users</p>
+                <div class="gray">
+                    <div class="orange1">50%</div>
+                </div>
+
+                <p class="visi">Bounce Rate</p>
+                <div class="gray">
+                    <div class="red1">75%</div>
+                </div>
+            </div>
+
+            <div class="stat">
+                <h3 class="con">Countries</h3>
+                <table class="table2">
+                    <tr class="new hover">
+                        <td>United States</td>
+                        <td>65%</td>
+                    </tr>
+
+                    <tr class="hover hover">
+                        <td>UK</td>
+                        <td>15.7%</td>
+                    </tr>
+
+                    <tr class="new hover">
+                        <td>Russia</td>
+                        <td>5.6%</td>
+                    </tr>
+
+                    <tr class="hover">
+                        <td>Spain</td>
+                        <td>2.1%</td>
+                    </tr>
+
+                    <tr class="new hover">
+                        <td>India</td>
+                        <td>1.9%</td>
+                    </tr>
+
+                    <tr  class="hover">
+                        <td>France</td>
+                        <td>1.5%</td>
+                    </tr>
+                </table>
+                <button class="more">More Countries   &nbsp;<i class="fas fa-arrow-right"></i></button>
+            </div>
+            <hr>
+
+            <div class="recent">
+                <h5 class="con">Recent Users</h5>
+
+                <ul class="main_ul">
+                    <li class="main_li">
+                        <img class="avatar3 set_img_left" src="images/avatar2.png" alt="img">
+                        <span class="big">Mike</span><br>
+                    </li>
+                </ul>
+                
+                <ul class="main_ul">
+                    <li class="main_li">
+                        <img  class="avatar3 set_img_left" src="images/avatar5.png" alt="img">
+                        <span class="big">Jill</span><br>
+                        
+                    </li>
+                </ul>
+
+                <ul class="main_ul">
+                    <li class="main_li">
+                        <img  class="avatar3 set_img_left" src="images/avatar6.png" alt="img">
+                        <span class="big">Jane</span><br>
+                        
+                    </li>
+                </ul>
+            </div>
+            <hr>
+
+            <div class="recent">
+                <h5 class="con">Recent Comments</h5>
+
+                <div class="paddi">
+                    <div class="left_side img2"><img class="avatar7" src="images/avatar7.png" alt="img"></div>
+                    <div class="left_side para"><h4 class="john">John<span> Sep 29, 2014, 9:12 PM</span></h4>
+                    <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                </div>
+
+                <div class="paddi">
+                    <div class="left_side img3"><img class="avatar7" src="images/avatar8.png" alt="img"></div>
+                    <div class="left_side para bo"><h4 class="john">Bo<span> Sep 28, 2014, 10:15 PM</span></h4>
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+      
+            <section>
+
+            <div  class="sub_nav_div width1 three_gray">
+                <div class="full">
+                    <div class="demo graph">
+                        <h3 class="hh3 hh31">Demographic</h3>
+                        <p>Language</p>
+                        <p>Country</p>
+                        <p>City</p>
+                    </div>
+
+                    <div class="demo graph">
+                        <h3 class="hh3 hh32">System</h3>
+                        <p>Browser</p>
+                        <p>OS</p>
+                        <p>More</p>
+                    </div>
+
+                    <div class="demo graph">
+                        <h3 class="hh3 hh33">Target</h3>
+                        <p>Users</p>
+                        <p>Active</p>
+                        <p>Geo</p>
+                        <p>Interests</p>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+          
+
+    
+    <footer class="sub_nav_div width1 footer">
+        <h4 class="foot">FOOTER</h4>
+        <p class="foot_p">Powered by <a href="#">w3.css</a></p>
+    </footer>
+</body>
+</html>
